@@ -1,0 +1,76 @@
+#item_container{
+    display: grid;
+    grid-template-rows: 250px 250px;
+    grid-template-columns: repeat(4, 200px);
+    grid-gap: 10px;
+    float:left;
+}
+
+
+#item_container > div{
+    /* height: 50px;
+    width: 50px; */
+    border: 1px solid green;
+}
+div>img:nth-of-type(1){
+    height: 170px;
+    width: 198px;
+}
+div>img:nth-of-type(2){
+    height: 30px;
+    width: 30px;
+    border: 5px solid red;
+    float:right;
+}
+div > input{
+    height:17px;
+    width:17px;
+    border:1px solid blue;
+}
+
+
+#cartItems{
+
+    float: left;
+    margin-left: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+#cartItems > div > div:nth-of-type(1){
+    display: flex;
+    flex-direction: column;
+    height: 35px;
+    width: 150px;
+    border: 1px solid grey;
+    /* margin: 5px; */
+}
+
+#cartItems > div {
+    display: flex;
+    flex-direction: row;
+    height: 35px;
+    width: 350px;
+    border: 1px solid grey;
+    /* margin: 5px; */
+
+}
+
+#cartItems > div > div{
+    display: flex;
+    flex-direction: column;
+    height: 35px;
+    width: 35px;
+    border: 1px solid grey;
+    /* margin-left:2px; */
+    /* margin: 5px; */
+}
+#cartItems > div > div:nth-of-type(4){
+    display: flex;
+    flex-direction: column;
+    height: 35px;
+    width: 75px;
+    border: none
+    margin-left:50px;
+    /* margin: 5px; */
+}
